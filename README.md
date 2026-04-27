@@ -189,7 +189,7 @@ The `EDA_Complete_dataset.csv` contains pre-processed data with the following ch
 
 ---
 
-## � Key Results & Findings
+## 📊 Key Results & Findings
 
 ### Model Performance Summary
 | Model | Accuracy | Precision | Recall | F1-Score | ROC-AUC |
@@ -295,7 +295,7 @@ For detailed feature documentation, see `EDA_Dataset_ID.ipynb`:
 
 ---
 
-## � Pipeline Architecture Diagram
+## 🏗️ Pipeline Architecture Diagram
 
 ```
 RAW DATA
@@ -330,3 +330,11 @@ PREDICTIONS & INSIGHTS
 ---
 
 ## 💡 Key Insights
+
+- **Time in Hospital** and **Number of Medications** are consistently the most predictive features across all models
+- **SMOTE balancing** on the training set significantly improved minority-class recall without compromising overall accuracy
+- **XGBoost** with hyperparameter tuning outperforms both Logistic Regression and Random Forest across all metrics
+- **Feature engineering** (log transforms, composite features) contributed to measurable improvements in model performance
+- **PCA analysis** reveals that ~10–15 components explain 90%+ of variance, confirming effective feature selection
+- **K-Means clustering** shows natural patient groupings that partially align with readmission outcomes
+- The pipeline demonstrates a complete end-to-end workflow suitable for production deployment with further optimization
